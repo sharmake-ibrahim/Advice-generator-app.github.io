@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$Colors: (
+    // Primary
+    LighCyan: hsl(193, 38%, 86%),
+    NeonGreen: hsl(150, 100%, 66%),
+    // Neutral
+    GrayishBlue: hsl(217, 19%, 38%),
+    DarkGrayishBlue: hsl(217, 19%, 24%),
+    DarkBlue: hsl(218, 23%, 16%),
+    //fonts
+    quote_Size: 1.75rem,
+    weight: 800,
+    Fonts: 'Manrope'
+);
+
+@function Allcolor($color-name) {
+    @return map-get($Colors, $color-name);
+}
+
+.Container {
+    min-height: 100vh;
+    min-width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: Allcolor(DarkBlue);
+}
+
+
+section {
+    height: 260px;
+    margin-top: 10em;
+    min-height: fit-content;
+    border-radius: 5px;
+    max-width: fit-content;
+    width: 400px;
+    background-color: Allcolor(DarkGrayishBlue);
+    padding: 2em;
+    text-align: center;
+
+    .pattern-divider-mobile {
+        padding: 10px 0;
+        max-width: 100%;
+    }
+
+    
+}
+
+.flex {
+    display: grid;
+    place-items: center;
+    row-gap: 1rem;
+    margin-top: 1em;
+    width: fit-content;
+}
+
+p {
+   color: Allcolor(NeonGreen);
+   padding-bottom: 10px;
+   text-transform: uppercase;
+}
+.border {
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    margin-top: -10px;
+    background-color: Allcolor(NeonGreen);
+
+    .icon-dice {
+        height: 25px;
+        width: 25px;
+    
+    }
+    
+
+    p, h4 {
+        font-family: color(Fonts);
+    }
+}
+
+
