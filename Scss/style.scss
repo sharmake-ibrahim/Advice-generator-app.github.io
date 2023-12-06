@@ -30,13 +30,15 @@ $Colors: (
     min-width: 100%;
     color: white;
     display: flex;
+    font-family: Allcolor(Fonts);
+    font-weight: Allcolor(weight);
     justify-content: center;
     background-color: Allcolor(DarkBlue);
 }
 
 
 section {
-    height: 260px;
+    height: fit-content;
     margin-top: 10em;
     min-height: fit-content;
     border-radius: 5px;

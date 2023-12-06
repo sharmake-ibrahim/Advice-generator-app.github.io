@@ -10,12 +10,15 @@
   min-width: 100%;
   color: white;
   display: flex;
+  font-family: "Manrope";
+  font-weight: 800;
   justify-content: center;
   background-color: hsl(218, 23%, 16%);
 }
 
 section {
-  height: 260px;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-top: 10em;
   min-height: -moz-fit-content;
   min-height: fit-content;
